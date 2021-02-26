@@ -6,6 +6,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://kit.fontawesome.com/f244332d5f.js" crossorigin="anonymous"></script>
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
@@ -56,39 +57,38 @@
 
 						<!-- Insert Etsy Embedd -->
 
-<!--						<script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>-->
-<!--						<script type='text/javascript'>new Etsy.Mini(14234966,'gallery',3,3,0,'https://www.etsy.com');</script>-->
+						<script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>
+						<script type='text/javascript'>new Etsy.Mini(14234966,'gallery',3,3,0,'https://www.etsy.com');</script>
 
 						<div class="shop">
-							<script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>
-						<!-- put above url into fucntion that listens to size of screen -->
-							<script type='text/javascript'>
-								const createEtsyContainer = (rowNum, colNum, Etsy) => {
-									new Etsy.Mini(6324867,'gallery',rowNum,colNum,0,'https://www.etsy.com');
-								}
+<!--							<script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>-->
+<!--						&lt;!&ndash; put above url into function that listens to size of screen &ndash;&gt;-->
+<!--							<script type='text/javascript'>-->
+<!--								const createEtsyContainer = (rowNum, colNum, Etsy) => {-->
+<!--									new Etsy.Mini(6324867,'gallery',rowNum,colNum,0,'https://www.etsy.com');-->
+<!--								}-->
 
-								const browserDimensions = () => ({
-									width: window.innerWidth,
-									height: window.innerHeight
-								})
+<!--								const browserDimensions = () => ({-->
+<!--									width: window.innerWidth,-->
+<!--									height: window.innerHeight-->
+<!--								})-->
 
-								const mobile = { width: 425, height: 825 };
-								window.addEventListener('resize', () => {
-									const browser = browserDimensions();
-									console.log(browser, mobile)
-									if(
-											(browser.height <= mobile.height && browser.width <= mobile.width) ||
-											(browser.height <= mobile.width && browser.width <= mobile.height)
-									) {
-										console.log("mobile!");
-										createEtsyContainer(3, 3, Etsy);
-									} else {
-										console.log("desktop");
-										createEtsyContainer(1, 3, Etsy);
-									}
-								})
-								window.onload =
-							</script>
+<!--								const mobile = { width: 425, height: 825 };-->
+<!--								window.addEventListener('resize', () => {-->
+<!--									const browser = browserDimensions();-->
+<!--									console.log(browser, mobile)-->
+<!--									if(-->
+<!--											(browser.height <= mobile.height && browser.width <= mobile.width) ||-->
+<!--											(browser.height <= mobile.width && browser.width <= mobile.height)-->
+<!--									) {-->
+<!--										console.log("mobile!");-->
+<!--										createEtsyContainer(3, 3, Etsy);-->
+<!--									} else {-->
+<!--										console.log("desktop");-->
+<!--										createEtsyContainer(1, 3, Etsy);-->
+<!--									}-->
+<!--								})-->
+<!--							</script>-->
 						</div>
 
 						<!-- Features -->
