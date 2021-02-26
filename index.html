@@ -1,132 +1,233 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Empey's Embellishments</title>
+		<link rel="shortcut icon" type="image/png" href="./assets/css/images/eedude.png"/>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
 
-  <head>
-    <meta charset="utf-8">
-    <title>Empey's Embellishments</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+			<!-- Header -->
+				<section id="header" class="wrapper">
 
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
-    <script src="./js/main.js"></script>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/main.css">
-  </head>
+					<!-- Logo -->
+						<div class="images">
+							<div class="logo rotate">
+								<img src="./assets/css/images/EElogo.png" alt="Empey's Embellishments Logo">
+							</div>
+							<div class="words">
+								<img src="./assets/css/images/EEmain.png" alt="Empey's Embellishments">
+							</div>
+						</div>
 
-  <body>
-    <header>
-      <div class="container">
-        <div class="twitter">
-          <a href=""><i class="fab fa-instagram"></i></a>
-        </div>
-        <div class="facebook">
-          <a href=""><i class="fab fa-facebook-f"></i></a>
-        </div>
+					<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li><a href="#gallery">Gallery</a></li>
+								<li><a href="#shop">Shop</a></li>
+								<li><a href="#upcomingEvents">Upcoming Events</a></li>
+								<li><a href="#commissions">Commissions</a></li>
+							</ul>
+						</nav>
+				</section>
 
-        <ul class="nav">
-          <li>
-            <a href="#gallery">Gallery</a>
-          </li>
-          <li>
-            <a href="#shop">Shop</a>
-          </li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </header>
+			<!-- Gallery -->
+				<section id="gallery" class="wrapper style1">
+					<div class="title">Gallery</div>
+					<div class="container">
+						<div class="style2">
+							<!-- instagram embed -->
+							<div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
+						</div>
+						<ul class="actions">
+							<li><a href="https://www.instagram.com/empeysembellishments/" class="button style3 large">See More On Instagram</a></li>
+						</ul>
+					</div>
+				</section>
 
-  <main>
+			<!-- Shop -->
+				<section id="main" class="wrapper style2">
+					<div class="title">Shop</div>
+					<div class="container">
+						<img class="backgroundDude" src="./assets/css/images/eedudetall.png">
 
-    <!-- Home Section-->
-    <section id="home" class="hero">
-        <div id="title">
-          <h1>Welcomeo Empey's Embellishments</h1>
-    </section>
+						<!-- Insert Etsy Embedd -->
 
-    <section id="scroll" class="scroll">
-      <a href="#gallery"></a>
-    </section>
+<!--						<script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>-->
+<!--						<script type='text/javascript'>new Etsy.Mini(14234966,'gallery',3,3,0,'https://www.etsy.com');</script>-->
 
-    <!--Gallery-->
+						<div class="shop">
+							<script type='text/javascript' src='https://www.etsy.com/assets/js/etsy_mini_shop.js'></script>
+						<!-- put above url into fucntion that listens to size of screen -->
+							<script type='text/javascript'>
+								const createEtsyContainer = (rowNum, colNum, Etsy) => {
+									new Etsy.Mini(6324867,'gallery',rowNum,colNum,0,'https://www.etsy.com');
+								}
 
-    <section id="gallery" class="gallery">
-      <h2 class="title">Gallery</h2>
-    </section>
+								const browserDimensions = () => ({
+									width: window.innerWidth,
+									height: window.innerHeight
+								})
 
-    <section id="scroll3" class="scroll3">
-      <a href="#about"></a>
-    </section>
+								const mobile = { width: 425, height: 825 };
+								window.addEventListener('resize', () => {
+									const browser = browserDimensions();
+									console.log(browser, mobile)
+									if(
+											(browser.height <= mobile.height && browser.width <= mobile.width) ||
+											(browser.height <= mobile.width && browser.width <= mobile.height)
+									) {
+										console.log("mobile!");
+										createEtsyContainer(3, 3, Etsy);
+									} else {
+										console.log("desktop");
+										createEtsyContainer(1, 3, Etsy);
+									}
+								})
+								window.onload =
+							</script>
+						</div>
 
-    <!--Shop-->
+						<!-- Features -->
+							<section id="features">
+								<header class="style1">
+									<p>Links above will redirect to Etsy for purchase, ships from Canada</p>
+								</header>
+							</section>
+					</div>
+				</section>
 
-    <section id="shop" class="shop">
-      <h2 class="title">Shop</h2>
-      <p>Click here to go to my etsy shop, links above redirect there</p>
-    </section>
+			<!-- Upcoming Events -->
+				<section id="highlights" class="wrapper style1">
+					<div class="title">Upcoming Events</div>
+					<div class="container">
 
-    <section id="scroll3" class="scroll3">
-      <a href="#about"></a>
-    </section>
+						<div class="style2">
+							<p>I currently don't have any upcoming shows, please check back later</p>
+						</div>
 
-    <!-- About Section -->
+						<div class="row aln-center">
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<div class="image featured"><img src="images/pic02.jpg" alt="" /></div>
+									<h3><a href="#">Upcoming Event</a></h3>
+									<p>Details of upcoming event</p>
+									<ul class="actions">
+										<li><a href="" class="button style1">Link to tickets/etc</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<div class="image featured"><img src="images/pic02.jpg" alt="" /></div>
+									<h3><a href="#">Upcoming Event</a></h3>
+									<p>Details of upcoming event</p>
+									<ul class="actions">
+										<li><a href="" class="button style1">Link to tickets/etc</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-4 col-12-medium">
+								<section class="highlight">
+									<div class="image featured"><img src="images/pic02.jpg" alt="" /></div>
+									<h3><a href="#">Upcoming Event</a></h3>
+									<p>Details of upcoming event</p>
+									<ul class="actions">
+										<li><a href="" class="button style1">Link to tickets/etc</a></li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</div>
+				</section>
 
-    <section id="about" class="about">
-      <h2 class="title">About Me</h2>
-      <p>
-      </p>
-      <div class="otherlinks">
-        <a href="https://www.goodreads.com/kajea">Here's what I'm reading on GoodReads</a>
-        <a href="https://www.last.fm/user/wulfzbane">Here's what I'm listening to on Last.fm</a>
-        <a href="https://kajemusic.com/">My music blog/writing portfolio</a>
-      </div>
-    </section>
+			<!-- Footer -->
+				<section id="footer" class="wrapper style2">
+					<div class="title">Commissions</div>
+					<div class="container">
+						<header class="style1">
+							<h2>Looking for something particular?</h2>
+							<p>
+								I am open for commissions! Please use the form below to get in touch with me.
+							</p>
+						</header>
+						<div class="row">
+							<div class="col-6 col-12-medium">
 
+								<!-- Contact Form -->
+									<section>
+										<form method="post" action="#">
+											<div class="row gtr-50">
+												<div class="col-6 col-12-small">
+													<input type="text" name="name" id="contact-name" placeholder="Name" />
+												</div>
+												<div class="col-6 col-12-small">
+													<input type="text" name="email" id="contact-email" placeholder="Email" />
+												</div>
+												<div class="col-12">
+													<textarea name="message" id="contact-message" placeholder="Message" rows="4"></textarea>
+												</div>
+												<div class="col-12">
+													<ul class="actions">
+														<li><input type="submit" class="style1" value="Send" /></li>
+														<li><input type="reset" class="style2" value="Reset" /></li>
+													</ul>
+												</div>
+											</div>
+										</form>
+									</section>
 
-    <section id="scroll2" class="scroll2">
-      <a href="#contact"></a>
-    </section>
+							</div>
+							<div class="col-6 col-12-medium">
 
+								<!-- Links -->
+									<section class="feature-list small">
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section>
+													<h3>Find me on:</h3>
+													<i class="fab fa-facebook"></i>
+													<a href="https://www.facebook.com/empeysembellishments/" class="sociallink">Facebook</a>
+													<br>
+													<i class="fab fa-instagram"></i>
+													<a href="https://www.instagram.com/empeysembellishments/" class="sociallink">Instagram</a>
+													<br>
+													<i class="fab fa-etsy"></i>
+													<a href="https://www.etsy.com/ca/shop/EmpeysEmbellishments" class="sociallink">Etsy</a>
+												</section>
+											</div>
+										</div>
+									</section>
+							</div>
+						</div>
+						<div id="copyright">
+							<ul>
+								<li>&copy; <script>document.write(new Date().getFullYear())</script> Empey's Embellishments</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+		</div>
 
-    <!--Contact form -->
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<!-- Instagram feed -->
+			<script type="text/javascript">
+				/* curator-feed-default-feed-layout */
+				(function(){
+					var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+					i.src = "https://cdn.curator.io/published/d993cf86-c705-4c66-b6c6-5b2d121ab307.js";
+					e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+				})();
+			</script>
 
-    <section id="contact" class="contact">
-      <h2 class="title">Contact</h2>
-
-      <p></p>
-
-      <div class="form-part">
-        <form class="form" action="" method="POST">
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required>
-          <label for="email">Email</label>
-          <input type="email" name="_replyto" id="email" required>
-          <label for="email">Message</label>
-          <textarea name="message" id="message" cols="30" rows="10"></textarea>
-          <button type="submit" class="submit">Send</button>
-        </form>
-
-        <p>Find me on social media:</p>
-
-        <div class="facebook2">
-          <a href=""><i class="fab fa-facebook-f"></i></a>
-        </div>
-        <div class="instagram2">
-          <a href=""><i class="fab fa-instagram-in"></i></a>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <h4>Copyright &copy; <script>document.write(new Date().getFullYear())</script> Empey's Embellishments</p></h4>
-    </footer>
-  </main>
-  </body>
+	</body>
 </html>

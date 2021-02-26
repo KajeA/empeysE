@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5f1e0d4-1ca6-4450-bb90-43223f02bdde" name="Default Changelist" comment="" />
+    <list default="true" id="fec069e0-3898-4514-b458-94377ec2e291" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1l6dDfX7KJpuyHtetKei5xz9o7m" />
+  <component name="ProjectId" id="1nFdOEvTaOssZYc8OYgaioYbOfE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -16,6 +16,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/css/images" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -25,17 +26,36 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kjenkinson\WebstormProjects\Shanaynay\assets\css\images" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\kjenkinson\WebstormProjects\Shanaynay\assets\css\images" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Shanaynay/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b5f1e0d4-1ca6-4450-bb90-43223f02bdde" name="Default Changelist" comment="" />
-      <created>1606921358586</created>
+      <changelist id="fec069e0-3898-4514-b458-94377ec2e291" name="Default Changelist" comment="" />
+      <created>1610989738939</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1606921358586</updated>
-      <workItem from="1606921362610" duration="2433000" />
-      <workItem from="1607138350001" duration="2045000" />
-      <workItem from="1607460300841" duration="37200000" />
+      <updated>1610989738939</updated>
+      <workItem from="1610989740208" duration="21020000" />
+      <workItem from="1611249366882" duration="1434000" />
+      <workItem from="1612294499751" duration="1192000" />
+      <workItem from="1613325610712" duration="1631000" />
     </task>
     <servers />
   </component>
