@@ -1870,7 +1870,6 @@ input, select, textarea {
 
 	.icon {
 		text-decoration: none;
-		text-decoration: none;
 	}
 
 		.icon:before {
@@ -2004,11 +2003,21 @@ input, select, textarea {
 			}
 
 		.wrapper.style2 {
-			background: #070707;
+			background: white;
 		}
 
 			.wrapper.style2 .title {
-				background: #070707;
+				background: white;
+				color: #484d55;
+			}
+
+
+		.wrapper.style3 {
+			background: black;
+		}
+
+			.wrapper.style3 .title {
+				background: black;
 				color: #484d55;
 			}
 
@@ -2195,7 +2204,9 @@ input, select, textarea {
 	z-index: 1;
 	opacity: 80%;
 	float: right;
+	filter: invert(1);
 }
+
 
 
 /* Upcoming Shows */
@@ -2394,6 +2405,14 @@ input, select, textarea {
 				font-size: 12pt;
 			}
 
+			.etsyBoxTablet {
+				display: none;
+			}
+
+			.etsyBoxMobile {
+				display: none;
+			}
+
 	}
 
 /* Large */
@@ -2457,6 +2476,14 @@ input, select, textarea {
 				margin-top: 4em;
 			}
 
+			.etsyBoxTablet {
+				display: none;
+			}
+
+			.etsyBoxMobile {
+				display: none;
+			}
+
 	}
 
 /* Medium */
@@ -2465,7 +2492,7 @@ input, select, textarea {
 		display: none;
 	}
 
-	@media screen and (max-width: 980px) {
+	@media screen and (max-width: 1093px) {
 
 		/* Section/Article */
 
@@ -2515,6 +2542,21 @@ input, select, textarea {
 		/* Shop */
 
 		.backgroundDude {
+			display: none;
+		}
+
+		.etsyBoxDesktop {
+			display: none;
+		}
+
+		.etsyBoxTablet {
+			display: block;
+			margin: auto;
+			width: 50%;
+			left: 4%;
+		}
+
+		.etsyBoxMobile {
 			display: none;
 		}
 
@@ -2723,6 +2765,13 @@ input, select, textarea {
 				transform: translateX(0);
 			}
 
+		.etsyBoxTablet {
+			display: block;
+			margin: auto;
+			width: 50%;
+			left: 4%;
+		}
+
 	}
 
 /* Small */
@@ -2927,6 +2976,20 @@ input, select, textarea {
 			display: none;
 		}
 
+		.etsyBoxDesktop {
+			display: none;
+		}
+
+		.etsyBoxTablet {
+			display: none;
+		}
+
+		.etsyBoxMobile {
+			display: block;
+			margin: auto;
+			width: 50%;
+			left: 10%;
+		}
 		/* Footer */
 
 			#footer {
